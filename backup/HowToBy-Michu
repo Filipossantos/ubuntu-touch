@@ -8,3 +8,9 @@ Aby zrobić backup na pendrive naszego Ubunciaka a dokladniej calego katalogu /h
    sudo mount /dev/sda /mnt/USB/
 4. Uruchamiamy skrypt BACKUP.sh :
    sudo sh BACKUP.sh -HASLO
+----------------------------------------------------------------------------------------------------------------
+Uruchomienie skryptu z repo przez libertine
+libertine-container-manager install-package -p git
+dodanie dostępu do zmountowanego katalogu ( w tym przypadku należy podmountować w /media/phablet)
+libertine-container-manager configure -i CONTAINER-IDENTIFIER -b add -p /media/phablet/ID-OF-SD
+następnie przechodzimy do zmountowanego katalogu -> i /ubuntu-touch/backup i w tym miejscu znajdziemy skrypt
